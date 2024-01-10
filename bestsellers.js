@@ -51,7 +51,7 @@ function main() {
 
   
   Logger.log('Wszystkich oznaczonych produktów LABEL_BESTSELLERS z warunku FILTER_ALL');
-	var productsAll       = getFilteredShoppingProducts(FILTER_BESTSELLERS, 'ALL');
+	var productsAll = getFilteredShoppingProducts(FILTER_BESTSELLERS, 'ALL');
 }  
 Logger.log('Wszystkich oznaczonych produktów LABEL_RAMPED_UP z warunku FILTER_RAMPED_UP');
 	var productsRampedUp  = getFilteredShoppingProducts(FILTER_RAMPED_UP, 'Produkty RAMPED_UP');
