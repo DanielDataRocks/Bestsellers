@@ -106,7 +106,7 @@ function getFilteredShoppingProducts(filters, ReportName) {
     var label = row['segments.product_custom_attribute4']
 
 		// Label product as LABEL_LOW
-		if (label != LABEL_LOW && clicks < THRESHOLD) {
+		if (label != LABEL_LOW && conversions > BESTSELLER_FLOOR) {
 			products.push([productId.toUpperCase(), LABEL_LOW]);
 			count += 1;
 		} 
