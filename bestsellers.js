@@ -113,10 +113,6 @@ function getFilteredShoppingProducts(filters, ReportName) {
     // Label product as ramped up
     // WAŻNE
     // Warunek Zombie reborn
-    if (label == LABEL_LOW && ( clicks > THRESHOLD || conversions > 0 ) ) {
-			products.push([productId.toUpperCase(), LABEL_RAMPED_UP]);
-			count += 1;
-		}
 	}
 	Logger.log(count);
 	return products;
